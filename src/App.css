@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+/*******And It began********/
+/*****Fonts*****/
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+:root{
+  --primary-green:#008000;
+  --primary-white:#ffffff;
+  --primary-dark: rgba(255,255,255,0);
+}
+body{
+  font-family: 'Barrio', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/***************Navbar****************/
+.mylogo {
+  width: 15rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/********NAVBAR MENU********/
+nav a.nav-link {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul li {
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav > li> a {
+  margin-left: 0.75rem;
+  margin-right: 00.75rem;
+  color:var(--primary-green) !important;
+  border-top: 00.1875rem solid var(--primary-dark);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+  border-top:0.1875rem solid var(--primary-white) ;
+}
+
+.navbar-nav >li >a:hover{
+  border-top:0.1875rem solid var(--primary-white) ;
 }
